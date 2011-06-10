@@ -1,0 +1,12 @@
+2010-10-08  Andri Steiner  <asteiner@snowflake.ch>
+
+	* Added "purgeCache" option
+	* Release of sfpinstallcheck 1.1
+
+2009-12-14  Andri Steiner  <asteiner@snowflake.ch>
+
+	* Set appropriate return codes
+
+2009-12-07 Michael Birchler  <mbirchler@snowflake.ch>
+
+	* Version 1.0.0 created.
