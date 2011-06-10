@@ -48,8 +48,10 @@ class tx_cliinstall_cli extends t3lib_cli  {
 				$this->printMessage($sql ? $sql : 'Table and field definitions are OK.', $sql ? 1 : 0);
 			case 'purgeCache' :
 				$tce = t3lib_div::makeInstance('t3lib_TCEmain');
-				$tce->admin = 1;
+				$tce->start(array(), array());
+				$tce->admin = true;
 				$tce->clear_cacheCmd('all');
+		
 				$this->printMessage('Cache purged');
 			default:
 				$availableActions = 'Available actions: dbCompare,purgeCache';
